@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eficiencia Energética y Sistemas Geotermales</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Eficiencia Energética y Sistemas Geotermales</h1>
+        <nav>
+            <a href="#inicio">Inicio</a>
+            <a href="#simulador">Simulador</a>
+            <a href="#infografias">Infografías</a>
+            <a href="#calculadora">Calculadora</a>
+            <a href="#juego">Juego</a>
+        </nav>
+    </header>
+
+    <section id="inicio">
+        <h2>Inicio</h2>
+        <p>Bienvenido a nuestra página dedicada a la eficiencia energética y los sistemas geotermales. Descubre cómo estos sistemas pueden ayudarte a ahorrar energía y proteger el medio ambiente.</p>
+    </section>
+
+    <section id="simulador">
+        <h2>Simulador de Eficiencia Geotermal</h2>
+        <div id="simulador-container">
+            <p>Interactúa con nuestro simulador y ajusta los parámetros para ver el impacto en el ahorro energético.</p>
+            <input type="range" id="profundidad" min="10" max="100" value="50"> Profundidad (m)
+            <br>
+            <input type="range" id="temperatura" min="10" max="50" value="20"> Temperatura Ambiente (°C)
+            <br>
+            <button onclick="calcularEficiencia()">Calcular Eficiencia</button>
+            <p id="resultado-simulador"></p>
+        </div>
+    </section>
+
+    <section id="infografias">
+        <h2>Infografías Interactivas</h2>
+        <div class="infografia">
+            <p>Conoce cómo la energía geotérmica funciona con ilustraciones interactivas.</p>
+            <!-- Espacio para gráficos animados -->
+        </div>
+    </section>
+
+    <section id="calculadora">
+        <h2>Calculadora de Ahorro Energético</h2>
+        <form id="calculadora-form">
+            <label for="consumo-actual">Consumo Actual (kWh):</label>
+            <input type="number" id="consumo-actual" required>
+            <button type="button" onclick="calcularAhorro()">Calcular Ahorro</button>
+        </form>
+        <p id="resultado-calculadora"></p>
+    </section>
+
+    <section id="juego">
+        <h2>El Desafío de la Energía Geotermal</h2>
+        <p>Explora nuestro minijuego educativo donde aprenderás a optimizar un sistema geotermal.</p>
+        <!-- Espacio para el juego interactivo -->
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
